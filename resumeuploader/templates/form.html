@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>resumeUpload</title>
+  <style type="text/css">
+  div
+  {
+    background-color:;
+  }
+   h1
+   {
+  text-align: center;
+
+   }
+   form
+   {
+    vertical-align: center;
+
+   }
+
+  </style>
+  </head>
+<body>
+  <br><br> 
+  <h1><u>Aligiq Resume Uploader</u></h1>
+  <br><br>
+  <div align="center">
+
+<form action="http://join.agiliq.com/api/resume/upload/?access_token={{ access_token }}" method="post" enctype="multipart/form-data">
+    <table width="30%">
+      <tr>
+        <td>
+          First Name
+        </td>
+        <td>
+          <input type="text" name="first_name" size=30>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Last Name
+        </td>
+        <td>
+          <input type="text" name="last_name" size=30>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Project Url
+        </td>
+        <td>
+          <input type="text" name="projects_url" size=30>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Code  Url
+        </td>
+        <td>
+          <input type="text" name="code_url" size=30>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Resume
+        </td>
+        <td>
+          <input type="file" name="resume">
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td align=right>
+          <input type="submit" value="submit">
+        </td>
+      </tr>
+    </table>
+</form>
+</div>
+
+</body>
+</html>
